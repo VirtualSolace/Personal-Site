@@ -5,7 +5,9 @@ body {
 }
 
 #terminal {
-      
+      display: flex;
+      align-items: center;
+      cursor: none;
 }
 
 #terminal span {
@@ -23,4 +25,5 @@ input {
       outline: none;
       margin-left: 5px;
       caret-color: white;
+      z-index: 10;
 }
