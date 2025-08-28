@@ -5,18 +5,16 @@ body {
 }
 
 #terminal {
-    display: flex; /* Flex keeps input next to the prompt */
-    align-items: center; /* Vertically aligns the input with the prompt */
+    display: flex;
+    align-items: center;
     padding: 10px;
-      display: flex;
-      align-items: center;
-      cursor: none;
+    cursor: none;
 }
 
 #terminal span {
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 16px; 
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -24,23 +22,13 @@ input {
     background: transparent;
     border: none;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 16px; 
-    font-weight: bold; 
-    color: white;
-    cursor: text;
-    outline: none;
-    margin-left: 5px; /* Small space between prompt and input */
-    caret-color: white;
-    width: auto; /* Prevent input from taking full width */
-    background: transparent;
-    border: none;
     font-size: 16px;
+    font-weight: bold;
     color: white;
     cursor: text;
     outline: none;
     margin-left: 5px;
     caret-color: white;
-    z-index: 10;
 }
 
 #output {
@@ -48,7 +36,6 @@ input {
     font-size: 16px;
     font-weight: bold;
     padding: 5px;
-    margin-top: 10px; /* Ensures output goes below the input */
-    white-space: pre-wrap; /* Wrap text properly */
+    margin-top: 10px;
+    white-space: pre-wrap;
 }
-
