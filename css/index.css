@@ -1,4 +1,26 @@
-#prompt {
-      font-family: 'Fira Code', 'Courier New', monospace;
-      font-size: 16
+body {
+      background-color: black;
+      margin: 0;
+      padding: 0;
+}
+
+#terminal {
+      
+}
+
+#terminal span {
+      color: #ffff;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+}
+
+input {
+      background: transparent;
+      border: none;
+      font-size: 16px;
+      color: white;
+      cursor: text;
+      outline: none;
+      margin-left: 5px;
+      caret-color: white;
 }
