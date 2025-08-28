@@ -1,22 +1,42 @@
 body {
-      background-color: black;
-      margin: 0;
-      padding: 0;
+    background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
 #terminal {
+<<<<<<< HEAD
+    display: flex; /* Flex keeps input next to the prompt */
+    align-items: center; /* Vertically aligns the input with the prompt */
+    padding: 10px;
+=======
       display: flex;
       align-items: center;
       cursor: none;
+>>>>>>> c27a5d8c3edac0ce93a09680ed748aa18cb6d974
 }
 
 #terminal span {
-      color: #ffff;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 16px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px; 
+    font-weight: bold;
 }
 
 input {
+<<<<<<< HEAD
+    background: transparent;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px; 
+    font-weight: bold; 
+    color: white;
+    cursor: text;
+    outline: none;
+    margin-left: 5px; /* Small space between prompt and input */
+    caret-color: white;
+    width: auto; /* Prevent input from taking full width */
+=======
       background: transparent;
       border: none;
       font-size: 16px;
@@ -26,4 +46,15 @@ input {
       margin-left: 5px;
       caret-color: white;
       z-index: 10;
+>>>>>>> c27a5d8c3edac0ce93a09680ed748aa18cb6d974
 }
+
+#output {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 10px; /* Ensures output goes below the input */
+    white-space: pre-wrap; /* Wrap text properly */
+}
+
