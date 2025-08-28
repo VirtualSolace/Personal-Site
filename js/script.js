@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (event.key === 'Enter') {
                   const usrInput = inputField.value.trim().toLowerCase();
                   handleCommands(usrInput);
-                  inputField.value = ''; // Clear input field
+                  inputField.value = '';
             }
       });
 
@@ -22,15 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
                   case 'resume':
                         window.open('assets/resume.pdf', '_blank');
-                        break; // Add a break statement to prevent unintended fall-through.
+                        break;
 
                   case 'history':
-                        window.location.href('assets/og.html');
+                        window.location.href = 'assets/og.html';
                         break;
 
                   default:
                         console.log("Unknown command");
-                        break;
             }
       }
 });
