@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         break;
 
                   case 'history':
+                        console.log('Redirecting to og.html'); // Debugging line
                         window.location.href = 'assets/og.html';
                         break;
 
