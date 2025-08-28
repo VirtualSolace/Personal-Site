@@ -5,15 +5,12 @@ body {
 }
 
 #terminal {
-<<<<<<< HEAD
     display: flex; /* Flex keeps input next to the prompt */
     align-items: center; /* Vertically aligns the input with the prompt */
     padding: 10px;
-=======
       display: flex;
       align-items: center;
       cursor: none;
->>>>>>> c27a5d8c3edac0ce93a09680ed748aa18cb6d974
 }
 
 #terminal span {
@@ -24,7 +21,6 @@ body {
 }
 
 input {
-<<<<<<< HEAD
     background: transparent;
     border: none;
     font-family: 'Courier New', Courier, monospace;
@@ -36,7 +32,6 @@ input {
     margin-left: 5px; /* Small space between prompt and input */
     caret-color: white;
     width: auto; /* Prevent input from taking full width */
-=======
       background: transparent;
       border: none;
       font-size: 16px;
@@ -46,7 +41,6 @@ input {
       margin-left: 5px;
       caret-color: white;
       z-index: 10;
->>>>>>> c27a5d8c3edac0ce93a09680ed748aa18cb6d974
 }
 
 #output {
