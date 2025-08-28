@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ashera's Personal Site</title>
+    <!-- <link rel="stylesheet" href="../css/index.css"> -->
+  </head>
+  <body style="background-color: forestgreen;">
+    
+    <div id="main-content">
+      <h1>Welcome to Ashera's Personal Website | <a href="#contact-me">Contact Me</a></h1>
+
+      <div id="about-me">
+        <h2>About Me</h2>
+        <p>
+          I am currently pursuing a Bachelor of Science in Computer Science at New Mexico Tech. I am also enrolled in an accelerated Master of Science program in Transdisciplinary Cybersecurity at New Mexico Tech.
+        </p>
+        <p>
+            I have listed some of my current (2025) interests below, if you wanna take a look at them. The website is pretty boring if I say so myself, but I hope you enjoy it while you're here. 
+        </p>
+      </div>
+
+      <div id="interests">
+        <h2>My Interests</h2>
+        <ul style="list-style: decimal-leading-zero;">
+          <li>Malware development</li>
+          <li>Capture The Flags (CTFs)</li>
+          <li>Studying history</li>
+          <li>Watching anime</li>
+          <li>Writing</li>
+          <li>Reading manga</li>
+          <li>Gaming</li>
+        </ul>
+      </div>
+
+      <div id="favorite-anime">
+            <h3> &#10013; My top 10 current favorite animes in no particular order (click on the images to be redirected) &#10013;</h3>
+            <a href="https://myanimelist.net/anime/26243/Owari_no_Seraph">
+                  <img src="img/owari_no_seraph.jpg" alt="Seraph of the End" width="150" height="220">
+            </a>
+            <a href="https://myanimelist.net/anime/4081/Natsume_Yuujinchou">
+                  <img src="img/Natsume's_Book_of_Friends.png" alt="Natsume's Book of Friends" width="150" height="220">
+            </a>
+            <a href="https://myanimelist.net/anime/30/Shinseiki_Evangelion">
+                  <img src="img/Evangelion.jpg" alt="Evangelion" width="150" height="220">
+            </a>
+            <a href="https://myanimelist.net/anime/11111/Another">
+                  <img src="img/another.jpg" alt="Another" width="150" height="220">
+            </a>
+            <a href="https://myanimelist.net/anime/9253/Steins_Gate">
+                  <img src="img/Steins;Gate.jpg" alt="Steins;Gate" width="150" height="220">
+            </a>
+            <a href="https://myanimelist.net/anime/7724/Shiki">
+                  <img src="img/Shiki.png" alt="Shiki" width="150" height="220">
+            </a>
+            <a href="https://myanimelist.net/anime/1210/NHK_ni_Youkoso">
+                  <img src="img/Welcome_to_the_NHK.jpg" alt="Welcome to the N.H.K." width="150" height="220">
+            </a>
+            <a href="https://myanimelist.net/anime/23283/Zankyou_no_Terror">
+                  <img src="img/Terror_in_Resonance.png" alt="Terror in Resonance" width="150" height="220">
+            </a>
+            <a href="https://myanimelist.net/anime/1575/Code_Geass__Hangyaku_no_Lelouch">
+                  <img src="img/Code_Geass.jpg" alt="Code Geass" width="150" height="220">
+            </a>
+            <a href="https://myanimelist.net/anime/44511/Chainsaw_Man">
+                  <img src="img/Chainsaw_man.jpg" alt="Chainsaw Man" width="150" height="220"><br>
+            </a>
+      </div>
+
+      <div id="quotes-i-made">
+            <h2>Quotes I made in my free time</h2>
+            <ul style="list-style:lower-roman">
+                  <li>Nobody is useless; they can still serve as a bad example.</li>
+                  <li> Midnight must never be allowed to come.</li>
+                  <li>He who isn’t afraid of dirt will go far.</li>
+            </ul>
+            <h3>My favorite quote I made</h3>
+            <p><b>In paradise and in hell, the future will be clear. No cloud hangs over the heart of the moon</b></p>
+      </div>
+
+      <div id="favorite-programming-languages">
+            <h3>Technologies I Use</h3>
+            <table border="1">
+                  <tr>
+                        <th>Languages</th>
+                        <th>Tools</th>
+                  </tr>
+                  <tr>
+                        <td>C</td>
+                        <td>Wireshark</td>
+                  </tr>
+                  <tr>
+                        <td>Python</td>
+                        <td>Nmap</td>
+                  </tr>
+                  <tr>
+                        <td>Assembly x86-64</td>
+                        <td>Rubber ducky</td>
+                  </tr>
+            </table>
+      </div>
+      <div id="contact-me">
+      <h3 style="color: #8A0000;">&#9888; Contact Me &#9888;</h3>
+            <p>I should respond to all messages within 4 business days. If I fail to, then I probably forgot to check.</p>
+            <form action="search" method="get">
+                  <input type="text" id="fname" name="fname" placeholder="First name" required>
+                  <input type="text" id="lname" name="lname" placeholder="Last name" required><br><br>
+
+                  <input type="email" id="email" name="email" placeholder="Email"required><br><br>
+
+                  <textarea id="message" name="message" placeholder="Type your message here" rows="5" cols="30" required></textarea><br><br>
+
+                  <input type="submit" value="Submit">
+            </form>
+      </div>
+
+  </body>
+</html>
+
+
+
+
