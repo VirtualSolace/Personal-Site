@@ -1,5 +1,13 @@
+/* Default dark theme using CSS variables */
+:root {
+    --background-color: black;
+    --text-color: white;
+    --font-weight: bold;
+}
+
 body {
-    background-color: black;
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
@@ -12,10 +20,10 @@ body {
 }
 
 #terminal span {
-    color: #fff;
+    color: var(--text-color);
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: var(--font-weight);
 }
 
 input {
@@ -23,18 +31,18 @@ input {
     border: none;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
-    font-weight: bold;
-    color: white;
+    font-weight: var(--font-weight);
+    color: var(--text-color);
     cursor: text;
     outline: none;
     margin-left: 5px;
-    caret-color: white;
+    caret-color: var(--text-color);
 }
 
 #output {
-    color: white;
+    color: var(--text-color);
     font-size: 16px;
-    font-weight: bold;
+    font-weight: var(--font-weight);
     padding: 5px;
     margin-top: 10px;
     white-space: pre-wrap;

@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       function handleCommands(command) {
-            switch (command) {
+            const [cmd, ...args] = command.split(' ')
+            switch (cmd) {
                   case 'help':
                         console.log("The help command works");
                         break;
@@ -28,9 +29,46 @@ document.addEventListener('DOMContentLoaded', () => {
                         console.log('Redirecting to og.html'); // Debugging line
                         window.location.href = 'assets/og.html';
                         break;
+                  
+                  case 'theme':
+                        handleThemeCommand(args);
+                        break;
 
                   default:
                         console.log("Unknown command");
+                        break;
             }
       }
+
+
+      function handleThemeCommand(args) {
+            if (args.length === 0) {
+                  console.log("Please specify a theme: 'dark' or 'white'");
+                  return;
+            }
+
+            const theme = args[0].toLowerCase(); // First argument (theme choice)
+            switch (theme) {
+                  case 'dark':
+                        // Apply dark theme by updating CSS variables
+                        document.documentElement.style.setProperty('--background-color', 'black');
+                        document.documentElement.style.setProperty('--text-color', 'white');
+                        document.documentElement.style.setProperty('--font-weight', 'bold');
+                        console.log('Theme set to dark');
+                        break;
+
+                  case 'light':
+                        // Apply light theme by updating CSS variables
+                        document.documentElement.style.setProperty('--background-color', 'white');
+                        document.documentElement.style.setProperty('--text-color', 'black');
+                        document.documentElement.style.setProperty('--font-weight', 'normal');
+                        console.log('Theme set to white');
+                        break;
+
+                  default:
+                        console.log("Invalid argument. Use 'dark' or 'white' for the theme.");
+            }
+      }
+
+
 });
